@@ -3,221 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Logistik & Supply Chain | Ahmad Jailani</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Portofolio M. Rizky Rinaldy</title>
+    <!-- Gunakan helper asset() untuk memanggil file dari folder public -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo"><i class="fas fa-shipping-fast"></i> AHMAD<span class="highlight">JAILANI</span></a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Beranda</a></li>
-                <li><a href="#about" class="nav-link">Tentang</a></li>
-                <li><a href="#services" class="nav-link">Layanan</a></li>
-                <li><a href="#portfolio" class="nav-link">Pengalaman</a></li>
-                <li><a href="#contact" class="nav-link btn-nav">Hubungi Saya</a></li>
-            </ul>
-        </div>
+<header>
+    <nav>
+        <h1>Welcome to My Portofolio</h1>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
     </nav>
-
+</header>
+<main>
     <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content fade-in">
-            <h1>Operasional Gudang &<br><span class="highlight">Logistik Terpadu</span></h1>
-            <p>Praktisi logistik dengan pengalaman luas dalam manajemen operasional gudang, kontrol inventaris, serta pemrosesan produk untuk memastikan efisiensi distribusi yang tepat waktu.</p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
-                <a href="https://drive.google.com/file/d/1ArA99ftRGViV119snkWBBxCHXeA0P1rD/view?usp=drivesdk" class="btn btn-outline">Unduh CV</a>
-            </div>
+        <div class="hero-content">
+            <img src="{{ asset('image/profile_image.png') }}" alt="Foto Profil Anda" class="profile-img">
+            <h2>Hi there, My Name is M. Rizky Rinaldy</h2>
+            <h1>Web Developer</h1>
+            <p>Mengubah ide menjadi pengalaman web yang cepat, indah, dan responsif.</p>
+            <a href="#projects" class="btn primary">Lihat Proyek Saya terbaru</a>
         </div>
     </section>
 
-    <section class="stats-bar">
-        <div class="container grid-4">
-            <div class="stat-item fade-in">
-                <i class="fas fa-calendar-check"></i>
-                <h3>6 Tahun</h3>
-                <p>Pengalaman Kerja</p>
+    <section id="about" class="container">
+        <h2 class="section-title"><span>🧑‍💻</span> About Me</h2>
+        <div class="about-wrapper">
+            <!-- Sisi Kiri -->
+            <div class="about-text text-center">
+                <p>Halo! Saya seorang mahasiswa <strong>Teknik Informatika</strong> di Universitas Islam Kalimantan dengan fokus pada pengembangan solusi web yang efisien.</p>
+                <p>Perjalanan saya unik. Dengan latar belakang <strong>General Affair</strong> selama 2 tahun dan total 5 tahun di sektor <strong>Logistik & Manufaktur</strong>, saya tidak hanya menulis kode, saya memahami bagaimana alur bisnis bekerja di lapangan.</p>
+                <p>Tujuan saya adalah membangun jembatan antara kebutuhan operasional yang kompleks dengan solusi digital yang intuitif.</p>
             </div>
-            <div class="stat-item fade-in">
-                <i class="fas fa-box-open"></i>
-                <h3>10k+</h3>
-                <p>Produk Diproses</p>
+
+            <!-- Sisi Kanan -->
+            <div class="about-skills">
+            <div class="skill-card text-center">
+                <h3>Technical Arsenal</h3>
+                <div class="skills-container">
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Laravel</span>
+                    <span class="skill-badge">MySQL</span>
+                </div>
             </div>
-            <div class="stat-item fade-in">
-                <i class="fas fa-tasks"></i>
-                <h3>100%</h3>
-                <p>Target Operasional</p>
-            </div>
-            <div class="stat-item fade-in">
-                <i class="fas fa-building"></i>
-                <h3>3</h3>
-                <p>Perusahaan Besar</p>
+            <div class="skill-card text-center">
+                <h3>Domain Expertise</h3>
+                    <div class="skills-container">
+                        <span class="skill-badge">Warehouse Management</span>
+                        <span class="skill-badge">Logistics Ops</span>
+                        <span class="skill-badge">Problem Solving</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <section id="about" class="section">
-        <div class="container grid-2">
-            <div class="about-img fade-in-left">
-                <img src="image/profile.jpeg" alt="Warehouse Staff">
+        <section id="experience" class="container">
+            <h2>Pengalaman Kerja 💼</h2>
+            <div class="experience-grid">
+                <div class="job-card">
+                    <h3>General Affair Support</h3>
+                    <p class="company">PT. Bintang Mitra Dayasembada - PT. Sefas Pelindotama</p>
+                    <p class="duration">2024 - 2026</p>
+                    <ul class="job-description">
+                        <li>Administrative Assistance: data entry and document archiving</li>
+                        <li>Office Operations: Monitoring and ordering office supplies, managing office equipment inventory, and ensuring facility maintenance</li>
+                        <li>Logistics & Facilities: ensuring the workplace is clean and functional</li>
+                        <li>Basic HR/Finance Support: Assisting with employee onboarding logistics and processing basic expense claims or petty cash requests</li>
+                    </ul>
+                </div>
+                <div class="job-card">
+                    <h3>Warehouse Picker</h3>
+                    <p class="company">PT. Sumber Alfaria Trijaya TBK</p>
+                    <p class="duration">2022 - 2024</p>
+                    <ul class="job-description">
+                        <li>Order Picking: Accurately selecting items from warehouse locations based on picking lists for each store</li>
+                        <li>Packing and Labeling: Securely packing products into standardized containers  and clearly labeling them for their destination store</li>
+                        <li>Quality Control: Checking product condition, expiry dates, and order accuracy before dispatch</li>
+                    </ul>
+                </div>
+                <div class="job-card">
+                    <h3>Warehouse Operator</h3>
+                    <p class="company">CV. Bintang Banua Abadi</p>
+                    <p class="duration">2020 - 2022</p>
+                    <ul class="job-description">
+                        <li>Monitoring Stock Levels: Track raw materials and finished goods in real-time</li>
+                        <li>Manage Procurement: Determine reorder points and ensure timely delivery of quality materials from suppliers</li>
+                        <li>Daily Production Scheduling with Optimize Capacity: Schedule production runs efficiently, maximizing resource use</li>
+                    </ul>
+                </div>
             </div>
-            <div class="about-text fade-in-right">
-                <h4 class="sub-title">TENTANG SAYA</h4>
-                <h2>Mengubah Kompleksitas Menjadi Efisiensi</h2>
-                <p>Saya adalah individu yang rajin dan saya memiliki pengalaman kerja yang signifikan selama 3,9 tahun di
-bidang warehouse dan logistik, termasuk 1 tahun di CV. Bintang Banua Abadi Sebagai Operator Cleaning
-And Packaging, 2 tahun di perusahaan warehouse Alfamart retail sebagai Picker non food dan farmasi
-atau obat-obatan serta 9 bulan di logistik Paragon sebagai operator gudang untuk barang berbagai
-macam produk kosmetik kecantikan dan perawatan pribadi.</p>
+        </section>
+
+<section id="projects" class="container">
+    <h2>New Project 🚀</h2>
+    
+    <!-- Gunakan wrapper grid/flex untuk menampung card -->
+    <div class="project-grid">
+        
+        <!-- Card 1 -->
+        <div class="project-card">
+            <h3>P2H Mobil Operasional</h3>
+            <p>Membuat Platform sederhana untuk monitoring pengecekan harian...</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card">
+            <h3>Sistem Manajemen Sparepart Unit Operasional</h3>
+            <p>Aplikasi web untuk manajemen Kondisi Part...</p>
+            <a href="#" class="btn secondary">Demo Live</a>
+            <a href="#" class="btn secondary">Kode (GitHub)</a>
+        </div>
                 
-                <ul class="skills-list">
-                    <li><i class="fas fa-check-circle"></i> Warehouse Operations (Inbound/Outbound)</li>
-                    <li><i class="fas fa-check-circle"></i> Inventory & Stock Opname Management</li>
-                    <li><i class="fas fa-check-circle"></i> Order Picking & Quality Control</li>
-                    <li><i class="fas fa-check-circle"></i> Logistic Coordination & Distribution</li>
-                </ul>
-            </div>
+        <!-- Card 3 -->
+        <div class="project-card">
+            <h3>P2H Mobil Operasional</h3>
+            <p>Membuat Platform sederhana untuk monitoring pengecekan harian...</p>
         </div>
-    </section>
 
-    <section id="services" class="section bg-dark">
-        <div class="container">
-            <div class="section-header text-center">
-                <h4 class="sub-title">KEAHLIAN</h4>
-                <h2>Distributor dan Manufacture</h2>
-            </div>
-            <div class="grid-3">
-                <div class="card service-card fade-in-up">
-                    <div class="icon-box"><i class="fas fa-box-open"></i></div>
-                    <h3>Quality & Finishing Product</h3>
-                    <p>Penanganan detail produk meliputi pembersihan, branding (logo), modifikasi teknis, hingga pengemasan siap kirim dengan standar kualitas tinggi.</p>
-                </div>
-                <div class="card service-card fade-in-up">
-                    <div class="icon-box"><i class="fas fa-dolly-flatbed"></i></div>
-                    <h3>Warehouse Operations</h3>
-                    <p>Eksekusi proses inbound/outbound, picking, checker, dan replenishment secara akurat untuk menjaga efisiensi operasional gudang.</p>
-                </div>
-                <div class="card service-card fade-in-up">
-                    <div class="icon-box"><i class="fas fa-truck-loading"></i></div>
-                    <h3>Logistics & Inventory Control</h3>
-                    <p>Koordinasi pengiriman dan penerimaan barang, serta menjaga akurasi stok melalui opname rutin dan manajemen relokasi barang.</p>
-                </div>
-            </div>
+        <!-- Card 4 -->
+        <div class="project-card">
+            <h3>Sistem Manajemen Sparepart Unit Operasional</h3>
+            <p>Aplikasi web untuk manajemen Kondisi Part...</p>
+            <a href="#" class="btn secondary">Demo Live</a>
+            <a href="#" class="btn secondary">Kode (GitHub)</a>
         </div>
-    </section>
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h4 class="sub-title">PENGALAMAN</h4>
-                <h2>Bidang Logistik dan Warehouse</h2>
-            </div>
-            <div class="grid-2">
-                <div class="project-card fade-in">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1566576912906-600aceebca9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="">
-                        <div class="project-overlay">
-                            <h3>Cleaning and Packaging</h3>
-                            <p>Quality Control & Finishing Product</p>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>CV. Bintang Banua Abadi (Desember 2020 - Desember 2021)</h3>
-                        <p>Bertanggung jawab atas pembersihan, branding, modifikasi instalasi (drat), pengemasan, hingga proses pemuatan produk tandon ke armada pengiriman.</p>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1566576912906-600aceebca9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="">
-                        <div class="project-overlay">
-                            <h3>Operasional Gudang Non-Food & Obat</h3>
-                            <p>Warehouse Picking & Inventory Control</p>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>PT. Sumber Alfaria Trijaya Tbk (Maret 2022 - Februari 2024)</h3>
-                        <p>Bertanggung jawab dalam proses pengambilan dan distribusi produk sesuai permintaan, serta menjaga akurasi stok melalui opname bulanan.</p>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1566576912906-600aceebca9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="">
-                        <div class="project-overlay">
-                            <h3>Operator Logistik</h3>
-                            <p>End-to-End Warehouse Management</p>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>PT. Paragon Technology and Innovation (September 2025 - Juni 2026)</h3>
-                        <p>Mengelola alur distribusi barang (inbound/outbound), memastikan akurasi dokumentasi, serta menjalankan operasional gudang secara menyeluruh termasuk replenishment, relokasi, hingga fungsi picking dan checking.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="section bg-pattern">
-        <div class="container">
-            <div class="contact-box fade-in-up">
-                <div class="grid-2">
-                    <div class="contact-info">
-                        <h2>Hubungi Saya</h2>
-                        <p>Mari berdiskusi mengenai peluang kerja sama atau kolaborasi dalam operasional gudang dan logistik.</p>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>ahmadjailani8221@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>0813-5606-9357</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Jl. Simpang 3 Nusa Indah No. 20, Bati-Bati, Tanah Laut</span>
-                        </div>
-                        <div class="socials">
-                            <a href="https://www.instagram.com/ijaisanca_/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://wa.me/6281356069357"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="myForm">
-                            <div class="form-group">
-                                <label>Nama</label>
-                                <input type="text" placeholder="Nama Lengkap" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" placeholder="Alamat Email" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Pesan</label>
-                                <textarea rows="4" placeholder="Kebutuhan Anda..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary full-width">Kirim Pesan</button>
-                        </form>
-                    </div>
-                </div>
+        <section id="contact" class="container">
+            <h2>Hubungi Saya ✉️</h2>
+            <form id="contact-form" action="#" method="POST">
+                @csrf <!-- Wajib ada di Laravel untuk keamanan form -->
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn primary">Kirim Pesan</button>
+            </form>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rizky-rinaldy-profile" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/rnld-devcode" target="_blank">GitHub</a> |
+                <a href="mailto:rizkyrinaldy.schwork@gmail.com">rizkyrinaldy.schwork@gmail.com</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <div class="container text-center">
-            <p>&copy; 2026 Ahmad Jailani. All Rights Reserved.</p>
-            <p style="font-size: 0.8rem; opacity: 0.7;">Supply Chain & Logistics Professional Portfolio</p>
-        </div>
+        <p>&copy; {{ date('Y') }} M. Rizky Rinaldy. Dibuat dengan 💜.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Pastikan file JS di public/js/script.js -->
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
