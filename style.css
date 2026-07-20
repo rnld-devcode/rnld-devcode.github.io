@@ -167,29 +167,6 @@ h2 {
     color: white;
 }
 
-.skills-grid {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skills-grid ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
-}
-
-.skills-grid li {
-    background-color: #ecf0f1;
-    padding: 8px 15px;
-    margin: 5px;
-    display: inline-block;
-    border-radius: 20px;
-    font-size: 0.9em;
-    color: #2c3e50;
-}
-
 /* BAGIAN PENGALAMAN KERJA (EXPERIENCE) */
 .experience-grid {
     display: grid;
@@ -266,12 +243,6 @@ h2 {
 .project-card h3 {
     color: #3498db;
     margin-bottom: 10px;
-}
-
-.tech-stack {
-    margin: 15px 0;
-    font-size: 0.9em;
-    color: #7f8c8d;
 }
 
 /* BAGIAN KONTAK */

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault(); // Mencegah form dikirim secara default
 
-            // 1. Ambil data (disesuaikan dengan ID 'message' di HTML)
+            // 1. Ambil data
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 2. Reset formulir
             contactForm.reset();
 
-            // 3. Tampilkan pesan sukses (jika elemen formStatus tersedia)
+            // 3. Tampilkan pesan sukses
             if (formStatus) {
                 formStatus.textContent = `Terima kasih, ${name}! Pesan Anda telah diterima.`;
                 formStatus.style.display = 'block';
