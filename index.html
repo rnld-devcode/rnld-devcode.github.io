@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio M. Rizky Rinaldy</title>
-    <!-- Gunakan helper asset() untuk memanggil file dari folder public -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- Path CSS statis -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -19,10 +19,12 @@
         </ul>
     </nav>
 </header>
+
 <main>
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="{{ asset('image/profile_image.png') }}" alt="Foto Profil Anda" class="profile-img">
+            <!-- Path gambar statis -->
+            <img src="image/profile_image.png" alt="Foto Profil M. Rizky Rinaldy" class="profile-img">
             <h2>Hi there, My Name is M. Rizky Rinaldy</h2>
             <h1>Web Developer</h1>
             <p>Mengubah ide menjadi pengalaman web yang cepat, indah, dan responsif.</p>
@@ -42,17 +44,17 @@
 
             <!-- Sisi Kanan -->
             <div class="about-skills">
-            <div class="skill-card text-center">
-                <h3>Technical Arsenal</h3>
-                <div class="skills-container">
-                    <span class="skill-badge">JavaScript</span>
-                    <span class="skill-badge">Python</span>
-                    <span class="skill-badge">Laravel</span>
-                    <span class="skill-badge">MySQL</span>
+                <div class="skill-card text-center">
+                    <h3>Technical Arsenal</h3>
+                    <div class="skills-container">
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Laravel</span>
+                        <span class="skill-badge">MySQL</span>
+                    </div>
                 </div>
-            </div>
-            <div class="skill-card text-center">
-                <h3>Domain Expertise</h3>
+                <div class="skill-card text-center">
+                    <h3>Domain Expertise</h3>
                     <div class="skills-container">
                         <span class="skill-badge">Warehouse Management</span>
                         <span class="skill-badge">Logistics Ops</span>
@@ -62,109 +64,108 @@
             </div>
         </div>
     </section>
-        <section id="experience" class="container">
-            <h2>Pengalaman Kerja 💼</h2>
-            <div class="experience-grid">
-                <div class="job-card">
-                    <h3>General Affair Support</h3>
-                    <p class="company">PT. Bintang Mitra Dayasembada - PT. Sefas Pelindotama</p>
-                    <p class="duration">2024 - 2026</p>
-                    <ul class="job-description">
-                        <li>Administrative Assistance: data entry and document archiving</li>
-                        <li>Office Operations: Monitoring and ordering office supplies, managing office equipment inventory, and ensuring facility maintenance</li>
-                        <li>Logistics & Facilities: ensuring the workplace is clean and functional</li>
-                        <li>Basic HR/Finance Support: Assisting with employee onboarding logistics and processing basic expense claims or petty cash requests</li>
-                    </ul>
-                </div>
-                <div class="job-card">
-                    <h3>Warehouse Picker</h3>
-                    <p class="company">PT. Sumber Alfaria Trijaya TBK</p>
-                    <p class="duration">2022 - 2024</p>
-                    <ul class="job-description">
-                        <li>Order Picking: Accurately selecting items from warehouse locations based on picking lists for each store</li>
-                        <li>Packing and Labeling: Securely packing products into standardized containers  and clearly labeling them for their destination store</li>
-                        <li>Quality Control: Checking product condition, expiry dates, and order accuracy before dispatch</li>
-                    </ul>
-                </div>
-                <div class="job-card">
-                    <h3>Warehouse Operator</h3>
-                    <p class="company">CV. Bintang Banua Abadi</p>
-                    <p class="duration">2020 - 2022</p>
-                    <ul class="job-description">
-                        <li>Monitoring Stock Levels: Track raw materials and finished goods in real-time</li>
-                        <li>Manage Procurement: Determine reorder points and ensure timely delivery of quality materials from suppliers</li>
-                        <li>Daily Production Scheduling with Optimize Capacity: Schedule production runs efficiently, maximizing resource use</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-<section id="projects" class="container">
-    <h2>New Project 🚀</h2>
-    
-    <!-- Gunakan wrapper grid/flex untuk menampung card -->
-    <div class="project-grid">
+    <section id="experience" class="container">
+        <h2>Pengalaman Kerja 💼</h2>
+        <div class="experience-grid">
+            <div class="job-card">
+                <h3>General Affair Support</h3>
+                <p class="company">PT. Bintang Mitra Dayasembada - PT. Sefas Pelindotama</p>
+                <p class="duration">2024 - 2026</p>
+                <ul class="job-description">
+                    <li>Administrative Assistance: data entry and document archiving</li>
+                    <li>Office Operations: Monitoring and ordering office supplies, managing office equipment inventory, and ensuring facility maintenance</li>
+                    <li>Logistics & Facilities: ensuring the workplace is clean and functional</li>
+                    <li>Basic HR/Finance Support: Assisting with employee onboarding logistics and processing basic expense claims or petty cash requests</li>
+                </ul>
+            </div>
+            <div class="job-card">
+                <h3>Warehouse Picker</h3>
+                <p class="company">PT. Sumber Alfaria Trijaya TBK</p>
+                <p class="duration">2022 - 2024</p>
+                <ul class="job-description">
+                    <li>Order Picking: Accurately selecting items from warehouse locations based on picking lists for each store</li>
+                    <li>Packing and Labeling: Securely packing products into standardized containers and clearly labeling them for their destination store</li>
+                    <li>Quality Control: Checking product condition, expiry dates, and order accuracy before dispatch</li>
+                </ul>
+            </div>
+            <div class="job-card">
+                <h3>Warehouse Operator</h3>
+                <p class="company">CV. Bintang Banua Abadi</p>
+                <p class="duration">2020 - 2022</p>
+                <ul class="job-description">
+                    <li>Monitoring Stock Levels: Track raw materials and finished goods in real-time</li>
+                    <li>Manage Procurement: Determine reorder points and ensure timely delivery of quality materials from suppliers</li>
+                    <li>Daily Production Scheduling with Optimize Capacity: Schedule production runs efficiently, maximizing resource use</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>New Project 🚀</h2>
         
-        <!-- Card 1 -->
-        <div class="project-card">
-            <h3>P2H Mobil Operasional</h3>
-            <p>Membuat Platform sederhana untuk monitoring pengecekan harian...</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="project-card">
-            <h3>Sistem Manajemen Sparepart Unit Operasional</h3>
-            <p>Aplikasi web untuk manajemen Kondisi Part...</p>
-            <a href="#" class="btn secondary">Demo Live</a>
-            <a href="#" class="btn secondary">Kode (GitHub)</a>
-        </div>
-                
-        <!-- Card 3 -->
-        <div class="project-card">
-            <h3>P2H Mobil Operasional</h3>
-            <p>Membuat Platform sederhana untuk monitoring pengecekan harian...</p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="project-card">
-            <h3>Sistem Manajemen Sparepart Unit Operasional</h3>
-            <p>Aplikasi web untuk manajemen Kondisi Part...</p>
-            <a href="#" class="btn secondary">Demo Live</a>
-            <a href="#" class="btn secondary">Kode (GitHub)</a>
-        </div>
-
-    </div>
-</section>
-
-        <section id="contact" class="container">
-            <h2>Hubungi Saya ✉️</h2>
-            <form id="contact-form" action="#" method="POST">
-                @csrf <!-- Wajib ada di Laravel untuk keamanan form -->
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit" class="btn primary">Kirim Pesan</button>
-            </form>
-            
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/rizky-rinaldy-profile" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/rnld-devcode" target="_blank">GitHub</a> |
-                <a href="mailto:rizkyrinaldy.schwork@gmail.com">rizkyrinaldy.schwork@gmail.com</a>
+        <div class="project-grid">
+            <!-- Card 1 -->
+            <div class="project-card">
+                <h3>P2H Mobil Operasional</h3>
+                <p>Membuat Platform sederhana untuk monitoring pengecekan harian...</p>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; {{ date('Y') }} M. Rizky Rinaldy. Dibuat dengan 💜.</p>
-    </footer>
+            <!-- Card 2 -->
+            <div class="project-card">
+                <h3>Sistem Manajemen Sparepart Unit Operasional</h3>
+                <p>Aplikasi web untuk manajemen Kondisi Part...</p>
+                <a href="#" class="btn secondary">Demo Live</a>
+                <a href="#" class="btn secondary">Kode (GitHub)</a>
+            </div>
+                
+            <!-- Card 3 -->
+            <div class="project-card">
+                <h3>P2H Mobil Operasional</h3>
+                <p>Membuat Platform sederhana untuk monitoring pengecekan harian...</p>
+            </div>
 
-    <!-- Pastikan file JS di public/js/script.js -->
-    <script src="{{ asset('js/script.js') }}"></script>
+            <!-- Card 4 -->
+            <div class="project-card">
+                <h3>Sistem Manajemen Sparepart Unit Operasional</h3>
+                <p>Aplikasi web untuk manajemen Kondisi Part...</p>
+                <a href="#" class="btn secondary">Demo Live</a>
+                <a href="#" class="btn secondary">Kode (GitHub)</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Hubungi Saya ✉️</h2>
+        <form id="contact-form" action="#" method="POST">
+            <!-- Token @csrf Laravel dihapus karena diganti ke HTML murni -->
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn primary">Kirim Pesan</button>
+        </form>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rizky-rinaldy-profile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/rnld-devcode" target="_blank">GitHub</a> |
+            <a href="mailto:rizkyrinaldy.schwork@gmail.com">rizkyrinaldy.schwork@gmail.com</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <!-- Tahun dinamis PHP diganti dengan teks statis 2026 -->
+    <p>&copy; 2026 M. Rizky Rinaldy. Dibuat dengan 💜.</p>
+</footer>
+
+<!-- Path JS statis -->
+<script src="script.js"></script>
 </body>
 </html>
